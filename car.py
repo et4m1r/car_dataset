@@ -6,7 +6,7 @@ from PIL import Image
 import os.path
 
 # annots = loadmat('car_devkit/cars_test_annos.mat')
-annots = loadmat('cars_annos.mat')
+annots = loadmat('/content/car_dataset/cars_annos.mat')
 
 data = [[row.flat[0] for row in line] for line in annots['annotations'][0]]
 
